@@ -1,0 +1,34 @@
+
+
+
+
+
+
+Silicon Valley has embraced an aesthetic of minimalism. Roughly stated, this is the belief that in general, simple things are more beautiful, and that you can make things more beautiful by removing elements rather than by adding them. 
+
+Ironically, minimalism is far from simple, and there are a lot of different flavors of it. Here are a couple of examples of different minimal styles of writing. There's the terse, masculine minimalism of a writer like Hemingway: the minimalism of a distant father, fond of whiskey and cigars, who sees the use of words as emotive and thus avoids them. There's the technical minimalism of an author like Paul Graham, a minimalism that treats words like code, moving parts in a machine to be optimized away, possible sources of error to be eliminated. Then there's the pragmatic businesslike minimalism of online writers seeking a platform like David Perell, who view each word as effort expended by a possible reader, and therefore something to be minimized as well. These are only a couple examples of minimalism in one medium, writing - if we examine the visual and musical arts as well there are far more. 
+
+There is a time and place for minimalism, and all in all I don't think it is an intrinsically bad thing. I should also point out that I like all three writers mentioned above. However, I do think it's overused as an aesthetic philosophy, and that this overuse is a symptom of a deeper cultural illness: a general lack of conviction and courage. 
+
+This raises the question: what is good minimalism, and what is bad minimalism? My tentative answer is this: Good minimalism is the use of absence to convey richness and detail; bad minimalism is the self-effacing tendency of aesthetic cowardice. 
+
+Good vs Bad minimalism
+
+What are examples of good minimalism? I don't like Paul Graham's prescription to write simply, but I like his particular brand of minimalism because it's a distinct flavor of minimalism. His minimalism reflects an engineer's mindset: the bright, precise, yet playful character of an innovator who views words as moving pieces in a sublime mechanism, parts to be optimized away for the beauty of the whole. I don't think this is true, but an aesthetic does not have to be true. I think it is laudable that Paul Graham writes as if he is programming because it expresses something true and unique about his character; I think it is wrong for him to say that writing is like programming. In other words, Paul Graham's writing philosophy mistakenly prescribes as universal advice what is particular to his own style. In other words, if you can be authentically minimal, then do it. 
+
+Bad minimalism, on the other hand, shows a lack of direction and conviction. Take Google's icon redesigns. Not only are they significantly worse from a visibility standpoint, but they also express a confused and weak sense of direction, which is ostensibly to create a coherent "brand image" by making all the icons look really similar. But what is this "brand image?" Nothing, it's as empty as Google's mission, which slipped over the course of two decades from "Don't be evil" to its current sad, formless state. Generally speaking, cookie-cutter minimalism is ugly. Sometimes it is the pragmatic choice, for example, if you're building a minimum viable product and don't want to worry about design yet, but the fact that it is the least ugly choice doesn't change the fact that it's still ugly.
+
+If minimalism is the tendency to subtract, then it is the reason for subtracting that makes all the difference. 
+
+Conviction
+
+In general, we should strive to have conviction in what we make. When minimalism is an expression of this conviction, it is good, but more often than not it's used as a crutch to mask a lack of conviction. 
+
+On some level the underlying psychological drive behind bad minimalism is similar to the one of a slacking but intelligent student - the slacker thinks, "I only studied 30 minutes and still got a C plus" because he is scared of trying hard and still getting an unsatisfactory grade, the bad minimalist thinks, "I only used flat designs to make my product and it looks presentable" because he is scared that if he tries to make something beautiful he'll be ridiculed for it. It is an ego protection mechanism. 
+
+My philosophy here is this: it is better to try and make something authentic, beautiful, and expressive and have it turn out bad than it is to hide behind the safeness of minimalism. If you're writing, go ahead and try to sound clever. You might fail and sound incredibly immature, but a fear of failure is disastrous for any creative endeavor. If you're designing something, go all out. Make it bold and loud, and if it turns out gaudy, you can fix it on the next iteration. This was what I tried to do [[exegesis]]' redesign, and so far I'm very happy with it.
+
+Beauty is something worth striving for, even if failing at it makes you look stupid. 
+
+
+

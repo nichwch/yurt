@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+In some sense exegesis gave birth to itself, because I used it to organize my ideas about exegesis. On days where exegesis was not working because I had broken something while coding it, I noticed that I could not think as clearly. Its absence was felt.
+
+This was reassuring, because it meant I had made something genuinely useful. In the past, I have made things I simply had no desire to use - one example is [JAFT](https://nichwch.medium.com/what-is-jaft-f543a4fad9d7), a time tracking app I made after making YANA (the predecessor to exegesis). I stopped using it after a bit, and didn't bother renewing the domain. I don't miss JAFT at all. The fact that I did miss exegesis on the days where it wasn't operational was a good sign.
+
+Also encouraging was the fact that I started hearing about similar notetaking apps a couple months into developing exegesis. Apps like Roam Research, and Obsidian were making waves on Twitter, and were taking a similar approach to nonlinear writing that I wanted to take exegesis in. This proved that I wasn't alone in needing this kind of product. 
+
+As I looked further into these tools, I found that some had taken to calling them [Second Brains](https://fortelabs.co/blog/basboverview/). I thought this was incredibly exciting. The term sounds cyberpunk; building a "second brain" sounds way cooler than building a "note taking app." At the same time, something about it unsettled me. 
+
+The weakness of the flesh
+
+"From the moment I understood the weakness of my flesh, it disgusted me. I craved for strength and certainty of steel. I aspired to the purity of the blessed machine. Your kind cling to your flesh, as though it will not decay and fail you. One day the crude biomass you call a temple will wither and you will beg my kind to save you.
+
+But I am already saved. For the Machine is immortal."
+
+- Magos Dominus Reditus, Warhammer 40k
+
+This quote reflects a common strain of thinking in Silicon Valley, that our biological selves are hopeless broken, that we need to hack into our brains dopamine-systems and rewire them for maximal productivity, that everything natural is ripe for disruption. This thinking is especially prevalent with the recent rise of PKMs (personal knowledge management systems) like Roam and Notion. Here, an electronic notetaking app is the "blessed machine", and your natural memory is the "flesh that will decay and fail you."
+
+I fell into this kind of thinking while building exegesis, and it put an enormous amount of pressure on me, because it made me feel as if it wasn't just a notetaking app I was building, but a shrine for the mind. I would look at other notetaking systems like Roam Research and feel threatened - my notetaking app wasn't as powerful as theirs, therefore my mind would be weaker than theirs. Every little imperfection, every unimplemented feature, every bug felt sacrilegious - this was my second brain I was building after all. Needless to say, this led to a lot of feature creep, because my second brain had to be perfect.
+
+If this sounds silly, that's because it is. Reality check: note taking apps are just note taking apps; it is supremely arrogant to think that you think you can replicate with a couple KLOCs of javascript code what took evolution thousands of years to perfect. I have stopped thinking about exegesis as a personal knowledge management system or a notetaking app. For me it is the mental equivalent of [perpetual stew](https://en.wikipedia.org/wiki/Perpetual_stew) - I leave it on the stove and toss ideas in whenever its convenient. The effortlessness is the point; if I ever find myself drawing a diagram to have to figure out how to use it, that defeats the purpose of the whole thing.
+
+The strength of serendipity
+
+"I do not want to hamper myself with anything in preparing my notes. I will not introduce any order or system. Whatever I recall, I will write down"
+
+- Dostoevsky, Notes From Underground
+
+Exegesis is the Apple Notes to Roam Research's Microsoft Word. It is less powerful, but it is simpler. A notetaking app should not force your mind to conform to it, it should conform to your mind. Personally, I prefer having an open document to write into over a bullet point system, even if the latter allows for more complex queries and notetaking systems. Some people hate both and prefer the simplicity of pen and paper. Do what works for you.
+
+Above all, don't forget - technology exists to serve man, the "blessed machine" exists to serve "the crude biomass." Your brain is not a tool for stocking your notes, your notes are a tool for your brain. I don't write everything down in exegesis, I still read physical books, a good deal of my thinking gets done on pen and paper. If I forget something, I figure it's evolution's way of telling me it wasn't important.
+
+What is the point of exegesis then? The point is serendipity - it's a place for me to capture little scraps of thought - ideas, feelings, anything that comes to you at the moment. 
+
+In writing this essay, I checked everything tagged "exegesis" and "personal-reflection" in exegesis. I didn't tag those thoughts for the purpose of writing this essay, they were written down spontaneously. That they have helped me write this essay is serendipitous. 

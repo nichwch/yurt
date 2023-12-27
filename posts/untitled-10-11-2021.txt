@@ -1,0 +1,23 @@
+
+
+Some thoughts on my Operating Systems course.
+
+Turns out, Computer Science is actually a science
+
+I always thought the name "Computer Science" was a misnomer - sciences are empirical, and computer science/programming is something that relies on reason/logic. It feels closer to applied mathematics than it does empirical science.
+
+As I read more about concurrency algorithms, however, it looks as if the only way to really compare them is to... study them empirically by actually running them on machines. I'm not sure if there is a mathematical approach to analyzing concurrency, or if it's just out of the scope of our book, but it seems like there isn't - or at least the empirical approach is more practical. 
+
+Then again, the subject of Computer Science's empirical inquiries isn't a natural thing - it's manmade. Everything about a computer is manmade, from the processor to the operating system to the programs that run on it, and as such are subject to human conventions. I'm only half joking when I say this: Isn't computer science actually a social science? 
+
+Maybe Computer Science is a social science
+
+This actually rings somewhat true to me! 
+
+The social sciences are infamous for being subject to the "[double hermeneutic.](https://en.wikipedia.org/wiki/Double_hermeneutic)" "Hermeneutic" means "understanding" or "interpretation."  The term double hermeneutic in social science refers to the fact the social sciences study human behavior, but human beings are just as able to study social science. The process of observation goes both ways.
+
+Human beings can observe the conclusions that social science reach and modify their behavior, which can potentially render those conclusions invalid. This is a complete impossibility in the natural sciences - an atom cannot learn about atomic theories and change its behavior to invalidate those theories. 
+
+I think Computer Science is also subject to this double hermeneutic. The best example of this is computer security. Best practices are researched by computer scientists, and strategies against them are developed by security researchers and malicious actors. Conclusions are reached about how to best design computer systems, but these conclusions never last very long, because hostile actors have incentives to disrupt these conclusions. In the same way that social theories can be invalidated by people's awareness of those social theories, conclusions on computer system can as well.
+ 
+

@@ -1,0 +1,77 @@
+
+
+I'm taking a gap quarter this Spring to work on some personal projects. It is always better to have a plan than to have no plan, even if things don't work out your way, so here are some tentative goals for my gap quarter.
+
+In [[Reflections for the New Year]], I outlined some things I wanted to get done this year. In no particular order, my goals were to: 
+
+Get good at piano
+
+Get good at guitar
+
+Read more (both fiction and non-fiction)
+
+Get better at drawing
+
+Learn a grappling art (because of quarantine, this will just be maintaining general fitness levels for now)
+
+Learn more code (new languages, new frameworks, new databases, fancy tech like blockchain and ML, etc. etc.)
+
+Continue working on exegesis (and maybe some other personal projects)
+
+I think it's important to have free time to just mess around and be bored, and explore dumb things that might turn out to be not so dumb - after all, "boredom is that disagreeable 'windless calm' of the soul that precedes a happy voyage and cheerful winds." Every activity I eventually took seriously - Model UN in high school, programming in college - started out as an casual hobby I never planned to take seriously. So, I'd rather have slow progress towards my goals and a sizeable chunk of time to mess around, than to fill my days to the point where I have no time to explore at all.
+
+I do think, however, that it's important to have priorities. In the first draft of this, I ordered each of those goals in a list of priorities from top to bottom, but I don't think that was a good way of looking at it. For one, a lot of them are highly related - for example, working on personal projects and learning to code. 
+
+I've instead chosen to cluster them in groups, and rank the groups. 
+
+Priority 1: Code-related creative work (continue work on exegesis, other personal projects, learn more code, write more)
+
+The main focus here is personal projects - learning more code and writing more are auxiliary activities that help this end. First among these personal projects is [[exegesis]], but I have a number of other personal projects that I want to work on as well. 
+
+To make regular progress towards personal projects, I'll be writing more on my development progress with [[exegesis]], under the tag [[devlog]]. I'll also be publishing another post soon on my plans for future features, and when I expect to release them by. I will do something similar with my other projects.
+
+As far as learning more code goes, I want to branch out beyond full-stack web development. The two "trendy" technologies I'd like to learn more about are blockchain and AI/ML. For the former, I want to learn more about Ethereum development, and for the latter, I want to review some basic linear algebra before adventuring further. I've heard good things about [huggingface](https://huggingface.co/), and want to explore that further. I want to spend some time learning about these technologies around 3 times a week, maybe for an hour or two a session. 
+
+For writing, I firmly believe it's pointless to write for the sake of writing - it's important to do things first, so you have something to write about. That being said, it's also useful to write regularly to reflect on things, so I want to write at least once a week (an hour or so a session).
+
+Priority 2: Activities that are a break from code-related creative work (piano, guitar, fiction/nonfiction reading, drawing, fitness)
+
+These are my hobbies that I use to take a break from code related creative-work.  
+
+I have not really settled into a good practice schedule for either piano or guitar. For the past couple of weeks, I've neglected guitar after moving my electric keyboard into my room, though my piano progress has hardly been good either - I have spent the past couple months playing the same pentatonic licks over Autumn Leaves. My goal for both instruments is to learn a couple of jazz standards with my housemates so we can jam together more. 
+
+I received a harmonica for my birthday. So far, I can play Oh Susannah, but I'd like to learn more. 
+
+As far as a schedule goes, I'd like to learn something new on the piano/guitar (either online lessons or part of a song) at least twice a week (for each instrument). Noodling doesn't count towards this goal. For the harmonica, I'm working my way through some Youtube course I found, and I'd like to work through at least one lesson a week.
+
+For reading, I read whatever I want, whenever I want. I do think setting a goal of reading at least 5 times a week wouldn't hurt, however. 
+
+For drawing, I'd like to practice drawing reference images in my own style 3 times a week, with a focus on drawing more three dimensionally, drawing people/poses, and using color. 
+
+For fitness, my friend recently got a squat rack, so I'd like to start lifting again. 3 sessions a week seems fairly standard, so I'll go with that.
+
+Executing
+
+I want to enter all the "weekly" goals into a calendar on Sunday, and then check every week how I've been measuring up against them. Here's a quick summary of them:
+
+Code:
+
+Learn AI/ML 3 times a week
+
+Learn Ethereum 3 times a week
+
+Write about progress with code, hobbies, or some idea at least once a week (don't have to publish!)
+
+Hobbies:
+
+Learn piano at least 2 times a week
+
+Learn guitar at least 2 times a week
+
+Learn harmonica once a week
+
+Read 5 times a week (loose goal)
+
+Practice drawing 3 times a week
+
+Lift 3 times a week
