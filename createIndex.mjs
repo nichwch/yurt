@@ -27,14 +27,13 @@ if(!existingDB){
 
 
 const db = await restoreFromFile("binary", dbPath);
-const resultObj = {};
 
-async function processSegment (segment ){
+async function processSegment (segment, resultsObj){
   console.log('processing segment ', segment);
   if(segment.trim().length < 0) return;
   const mostSimilarSegments = await queryDB(db, segment, 0.85, 10);
   console.log('most similar:', mostSimilarSegments.hits);
-  resultObj[segment] = mostSimilarSegments.hits.map((hit) => ({
+  resultsObj[segment] = mostSimilarSegments.hits.map((hit) => ({
     content:hit.document.content,
     parent:hit.document.parent,
     score:hit.score
@@ -47,16 +46,21 @@ async function processFile (filePath) {
   const fileContents = await fs.readFile(filePath, 'utf8');
   const segments = splitText(fileContents);
   const promises = [];
+  const resultsObj = {};
   for(let segment of segments){
-    promises.push(processSegment(segment));
+    promises.push(processSegment(segment,resultsObj));
   }
   await Promise.all(promises);
+  const json = JSON.stringify(resultsObj);
+
+  const pathNameWithoutDot = filePath.split('.')?.[0].replaceAll('/','--');
+  console.log('pathname',filePath, pathNameWithoutDot)
+  fs.writeFile(`.${pathNameWithoutDot}/.json`, json, 'utf8');
 }
 
 
 const allFiles = getAllEligibleFiles(POST_DIR);
 const limit = pLimit(5);
 await Promise.all( allFiles.map((file) => (limit(() => processFile(file)))))
-const json = JSON.stringify(resultObj);
-fs.writeFile('index.json', json, 'utf8');
+
 // console.log(resultObj);
