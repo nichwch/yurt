@@ -32,7 +32,7 @@ const db = await restoreFromFile("binary", dbPath);
 async function processSegment (segment, resultsObj){
   console.log('processing segment ', segment);
   if(segment.trim().length < 0) return;
-  const mostSimilarSegments = await queryDB(db, segment, 0.85, 10);
+  const mostSimilarSegments = await queryDB(db, segment, 0.80, 20);
   console.log('most similar:', mostSimilarSegments.hits);
   resultsObj[segment] = mostSimilarSegments.hits.map((hit) => ({
     content:hit.document.content,
