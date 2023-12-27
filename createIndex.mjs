@@ -6,6 +6,7 @@ import fs from 'fs/promises'
 import { splitText } from './yurtify-utils/splitText.mjs';
 import { queryDB } from './yurtify-utils/queryDB.mjs';
 import pLimit from 'p-limit'
+import { convertPathNameToIndexName } from './yurtify-utils/convertPathNameToIndexName.mjs';
 const program = new Command();
 console.log("HERE?")
 
@@ -53,9 +54,9 @@ async function processFile (filePath) {
   await Promise.all(promises);
   const json = JSON.stringify(resultsObj);
 
-  const pathNameWithoutDot = filePath.split('.')?.[0].replaceAll('/','--');
+  const pathNameWithoutDot = convertPathNameToIndexName(filePath);
   console.log('pathname',filePath, pathNameWithoutDot)
-  fs.writeFile(`.${pathNameWithoutDot}/.json`, json, 'utf8');
+  fs.writeFile(`./${pathNameWithoutDot}.json`, json, 'utf8');
 }
 
 
