@@ -23,7 +23,7 @@
 	<slot />
 	</div>
 	{#if $focusedText!==null}
-	<div class='p-2 pt-10 basis-1/5 h-full flex flex-col'>
+	<div class='p-2 pt-10 basis-1/5 w-1/5 h-full flex flex-col'>
 		<h1 class='text-red-700'>related <button class='float-right hover:underline' on:click={closeSidebar}>[X]</button></h1>
 		<div class='overflow-y-auto  w-full'>
 		{#each relatedContent as entry}
