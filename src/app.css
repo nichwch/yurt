@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    height:100%;
+}
+
+::selection {
+    background: theme("colors.red.400");
+  }

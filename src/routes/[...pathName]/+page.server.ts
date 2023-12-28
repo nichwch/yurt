@@ -1,6 +1,6 @@
 import { convertPathNameToIndexName } from '$lib/convertPathNameToIndexName';
 import fs from 'fs/promises'
-import type { PageServerLoad } from '../notes/[...pathName]/$types';
+import type { PageServerLoad } from '../[...pathName]/$types';
 
 export const load = (async ({params}) => {
     const path = params.pathName;
