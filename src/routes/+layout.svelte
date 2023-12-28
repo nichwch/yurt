@@ -29,7 +29,7 @@
 		{#each relatedContent as entry}
 		<div class='py-2 w-full'>
 			<div class='text-sm'>
-				<a class='underline' href={'/'+entry.parent}>{entry.parent.split('/').pop()} </a>
+				<a class='underline' href={'/'+entry.parent+'?search='+entry.content}>{entry.parent.split('/').pop()} </a>
 				<span class='text-red-700'>[{Math.floor(entry.score * 100)}% similar]</span>
 			</div>
 
