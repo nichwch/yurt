@@ -20,7 +20,7 @@
 
 </script>
 
-<button class='absolute top-3 left-3 px-1 border border-black bg-red-400' on:click={()=>(modalStore.set(!$modalStore))}>
+<button class='md:hidden absolute top-3 left-3 px-1 border border-black bg-red-400' on:click={()=>(modalStore.set(!$modalStore))}>
 menu
 </button>
 <div class="h-full flex">
@@ -51,7 +51,7 @@ menu
 		</div>
 	</div>
 	<!-- mobile search results -->
-	<div class='md:hidden absolute flex flex-col h-2/5 bottom-0 left-0 w-full bg-white border-t border-t-black '>
+	<div class='md:hidden absolute flex flex-col h-2/5 bottom-0 left-0 w-full bg-gray-200 border-t border-t-black shadow-black shadow'>
 		<h1 class='text-red-700 px-2 border-b border-b-black'>related <button class='float-right hover:underline' on:click={closeSidebar}>[X]</button></h1>
 		<div class='overflow-y-auto  w-full px-2'>
 			{#each relatedContent as entry}
