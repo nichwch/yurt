@@ -46,7 +46,7 @@
 
 
 </script>
-<div class='w-[36rem] mx-auto'>
+<div class='md:w-[26rem] lg:w-[36rem] mx-auto md:p-0 px-5'>
 {#each segments as segment, index}
 {#if segment.trim().length > 0}
 <div id='editor-block-{index}' class='p-1 break-words hover:bg-red-100 transition-colors' 
