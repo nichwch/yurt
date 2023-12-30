@@ -25,6 +25,6 @@ export const createDateFile = async () => {
 		dateFileContents[file] = fileCreationDate;
 	}
 
-	const json = JSON.stringify(dateFileContents);
+	const json = JSON.stringify(dateFileContents, null, 2);
 	await fs.writeFile(DATE_FILE_NAME, json, 'utf-8');
 };
