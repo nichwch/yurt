@@ -1,5 +1,3 @@
-
-
 Some thoughts on my Operating Systems course.
 
 Turns out, Computer Science is actually a science

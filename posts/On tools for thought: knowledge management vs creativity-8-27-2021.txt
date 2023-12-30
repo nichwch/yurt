@@ -1,5 +1,3 @@
-
-
 Here's a mystery that's been on my mind for a while now: I never take notes in class, I never use [[exegesis]] to take notes, so how is it that I ended up making something that most people would classify as a "note taking app"? 
 
 That leads to a broader question: why is it that most [[tools for thought]] are also seen as "note taking apps?" The introduction of [[roam]] research has inspired a number of other products with the same core backlinking functionality - all of which bill themselves as both tools for thought and note taking apps. This implies that tools for thought and notetaking apps are synonymous, but nobody really thinks this; a decent amount of creators in the tools for thought space object to their creations being called "note taking apps", and even the ones who self-describe their projects as note taking apps insist that they're more than just that. This makes sense - the term "[[tools for thought]]" evokes something incredibly broad and ambitious, while note taking is a mundane (and arduous) activity. Indeed, it'd be a crying shame if tools for thought were limited to just note taking tools.

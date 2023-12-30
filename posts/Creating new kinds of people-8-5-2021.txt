@@ -1,5 +1,3 @@
-
-
 The usual way to think about technology, software, and startups is that they solve problems, and so it follows then that the best way to create a new technology is to find a problem people have and solve it. This is not a bad approach to take, and it's been successful for many people. Still, I think it's too narrow.
 
 The problem with the view that technology is meant to solve problems is that technology always ends up doing so much more than that. Take any technology and its original intended purpose (fire, automobiles, airplanes, etc.) and you will find it has created a cascade of second order effects far beyond what it was originally intended to do. Sometimes these impacts are good, sometimes they're bad, sometimes they're just strange. 

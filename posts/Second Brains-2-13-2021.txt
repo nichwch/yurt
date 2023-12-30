@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 In some sense exegesis gave birth to itself, because I used it to organize my ideas about exegesis. On days where exegesis was not working because I had broken something while coding it, I noticed that I could not think as clearly. Its absence was felt.
 
 This was reassuring, because it meant I had made something genuinely useful. In the past, I have made things I simply had no desire to use - one example is [JAFT](https://nichwch.medium.com/what-is-jaft-f543a4fad9d7), a time tracking app I made after making YANA (the predecessor to exegesis). I stopped using it after a bit, and didn't bother renewing the domain. I don't miss JAFT at all. The fact that I did miss exegesis on the days where it wasn't operational was a good sign.

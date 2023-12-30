@@ -41,9 +41,12 @@
 	};
 
 	afterNavigate(scrollToAndSelectBlock);
+
+	$: postName = $page.params.pathName.split('/').pop()?.split('.')?.[0];
 </script>
 
 <div class="md:w-[26rem] lg:w-[36rem] mx-auto md:p-0 px-5">
+	<h1 class="mb-5 text-lg font-semibold">{postName}</h1>
 	{#each segments as segment, index}
 		{#if segment.trim().length > 0}
 			<button

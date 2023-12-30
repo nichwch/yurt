@@ -1,5 +1,3 @@
-
-
 I'm using the terms 'alpha release' and 'beta release' here very roughly. That being said, my definition of a 'beta release' is something I consider 'full featured', whereas my conditions for an 'alpha release' were 'barely functional.' I set a deadline of new year's for the alpha release and barely made it. While exegesis is totally usable right now, there are a couple of features that it's lacking that I would like to patch before trying to onboard more users. Put another way, the 'beta release' is when I will feel comfortable enough with the product that I will dedicate time to promoting and marketing it to people. 
 
 Here are a list of features I'd like to have finished before an official beta release.
