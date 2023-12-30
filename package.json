@@ -43,5 +43,8 @@
 		"@orama/plugin-data-persistence": "^2.0.0-beta.11",
 		"@xenova/transformers": "^2.12.1",
 		"commander": "^11.1.0"
+	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "latest"
 	}
 }
