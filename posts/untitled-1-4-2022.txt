@@ -23,11 +23,10 @@ However, I think there is something understated here, a point he makes briefly t
  It is not simplicity alone that makes an ontology desirable, but rather simplicity with regards to some aim or desire. A physicalist ontology makes science easier and simpler to understand. But what makes simple science desirable in the first place? This stems from the uses that science has in shaping the natural world to our desires, and also in a pure human drive for knowledge. 
 
 Ultimately it is these drives that make an ontology desirable, not just its simplicity.
-
+~
 There is a political consequence to this: More often than not, two parties with opposing aims will have entirely ontologies. They will not even be able to agree over what exists in the first place. 
 
 Surely, this poses serious challenges to liberalism, and the idea that political differences can be resolved through rational debate. How can rational debate take place when the participants do not even agree on the simple question of what exists?
 
 Could expand this into an [[essay]] eventually.
-
- [[philosophy]] [[politics]] [[writing]] [[starred]] 
+~

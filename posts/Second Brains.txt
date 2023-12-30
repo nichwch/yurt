@@ -8,11 +8,13 @@ As I looked further into these tools, I found that some had taken to calling the
 
 The weakness of the flesh
 
+~
 "From the moment I understood the weakness of my flesh, it disgusted me. I craved for strength and certainty of steel. I aspired to the purity of the blessed machine. Your kind cling to your flesh, as though it will not decay and fail you. One day the crude biomass you call a temple will wither and you will beg my kind to save you.
 
 But I am already saved. For the Machine is immortal."
 
 - Magos Dominus Reditus, Warhammer 40k
+~
 
 This quote reflects a common strain of thinking in Silicon Valley, that our biological selves are hopeless broken, that we need to hack into our brains dopamine-systems and rewire them for maximal productivity, that everything natural is ripe for disruption. This thinking is especially prevalent with the recent rise of PKMs (personal knowledge management systems) like Roam and Notion. Here, an electronic notetaking app is the "blessed machine", and your natural memory is the "flesh that will decay and fail you."
 

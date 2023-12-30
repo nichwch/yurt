@@ -6,7 +6,7 @@ The auteur believes otherwise. Language, he says, cannot communicate an idea wit
 
 Neither perspective is completely correct. The reality is that there is a tradeoff between the approach of creative collaboration and the approach of an auteur. What creative collaborators gain through specialization and the combination of talents, they lose in the fidelity of their ideas' expression; what the auteur loses through not being able to harness others' talents, he gains through the ability to express an idea to its fullest. Naturally, the more talents the auteur is able to accrue, the less he needs others, and the more worthwhile the tradeoff of solo work becomes.  
 
-Reflections and originals
+// Reflections and originals
 
 There is a short story by [[Borges]], about an author who realizes on his deathbed that the words used to describe a rose are not a mere reflection of an object, but an object in their own right.
 

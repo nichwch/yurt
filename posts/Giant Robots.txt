@@ -16,7 +16,7 @@ But the user has chosen to open Facebook, and chosen to sign up for the service.
 
 Who cares? Make all the metaphysical arguments you'd like, a sufficiently powerful recommendation algorithm will still be able to sway decisions enough for Facebook to make 86 billion dollars a year. Free will may or may not be real, but it is an empirical fact that the profitable choice is to act as if it isn't.
 
-Technology that you control
+// Technology that you control
 
 I don't think it's possible to fix our information ecosystem. In fact, I don't even know if it'd be desirable to fix it - as perverse as it is, there is also a chaotically beautiful side to the internet.
 

@@ -1,7 +1,10 @@
 import { Command } from 'commander';
 import { POST_DIR, createDBFile, dbPath } from '../yurtify-utils/createDBFileFunction.mjs';
 import { restoreFromFile } from '@orama/plugin-data-persistence/server';
-import { getAllEligibleFiles } from '../yurtify-utils/getAllEligibleFiles.mjs';
+import {
+	getAllEligibleFiles,
+	getAllNewlyEditedFiles
+} from '../yurtify-utils/getAllEligibleFiles.mjs';
 import fs from 'fs/promises';
 import { splitText } from '../yurtify-utils/splitText.mjs';
 import { queryDB } from '../yurtify-utils/queryDB.mjs';

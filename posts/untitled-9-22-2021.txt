@@ -16,7 +16,7 @@ Typography
 
 I may take a typography class this quarter. It's not required for graduation, but I figure it could help me design better products, and maybe make [[exegesis]] look prettier. 
 
-Read this, liked it a lot.
+// Read this, liked it a lot.
 
-[https://ava.substack.com/p/one-small-thing?token=eyJ1c2VyX2lkIjoxMDUwNzA4NywicG9zdF9pZCI6NDA3ODUwNjgsIl8iOiI4R2RYTiIsImlhdCI6MTYzMjM1NzQxNiwiZXhwIjoxNjMyMzYxMDE2LCJpc3MiOiJwdWItMjM0MTciLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.lHl23vruozg5jSB6kISO4zswiVGojLBM2UkPLlrmx_Q](https://ava.substack.com/p/one-small-thing?token=eyJ1c2VyX2lkIjoxMDUwNzA4NywicG9zdF9pZCI6NDA3ODUwNjgsIl8iOiI4R2RYTiIsImlhdCI6MTYzMjM1NzQxNiwiZXhwIjoxNjMyMzYxMDE2LCJpc3MiOiJwdWItMjM0MTciLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.lHl23vruozg5jSB6kISO4zswiVGojLBM2UkPLlrmx_Q)
+// [https://ava.substack.com/p/one-small-thing?token=eyJ1c2VyX2lkIjoxMDUwNzA4NywicG9zdF9pZCI6NDA3ODUwNjgsIl8iOiI4R2RYTiIsImlhdCI6MTYzMjM1NzQxNiwiZXhwIjoxNjMyMzYxMDE2LCJpc3MiOiJwdWItMjM0MTciLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.lHl23vruozg5jSB6kISO4zswiVGojLBM2UkPLlrmx_Q](https://ava.substack.com/p/one-small-thing?token=eyJ1c2VyX2lkIjoxMDUwNzA4NywicG9zdF9pZCI6NDA3ODUwNjgsIl8iOiI4R2RYTiIsImlhdCI6MTYzMjM1NzQxNiwiZXhwIjoxNjMyMzYxMDE2LCJpc3MiOiJwdWItMjM0MTciLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.lHl23vruozg5jSB6kISO4zswiVGojLBM2UkPLlrmx_Q)
 

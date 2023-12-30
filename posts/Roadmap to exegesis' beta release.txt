@@ -2,9 +2,9 @@ I'm using the terms 'alpha release' and 'beta release' here very roughly. That b
 
 Here are a list of features I'd like to have finished before an official beta release.
 
-Key Features
+// Key Features
 
-Page tags
+// Page tags
 
 Right now users can apply tags to paragraphs and highlights. I would like to allow users to apply tags to an entire page as well.
 
@@ -14,43 +14,43 @@ This is for scenarios where you do want to write in an organized manner. For exa
 
 An additional benefit is that this allows users to construct folder-like organization schemes. For example, if I wanted to replicate a folder structure I'd constructed in Notion that looked like this:
 
-___Guitar
+//___Guitar
 
-			|___Practice Routine
+//			|___Practice Routine
 
-			|		|___Songs to Practice
+//			|		|___Songs to Practice
 
-			|		|___Scales to Practice
+//			|		|___Scales to Practice
 
-			|___Guitar Goals
+//			|___Guitar Goals
 
-			|___Music Theory
+//			|___Music Theory
 
 I could instead create all these pages, and tag them with their parents. Then, from the parent note, you would able to see the linked notes (like the sub directories, in a file system). 
 
 In general, a file system represents a tree structure, and a tagging system represents a graph structure. Since a tree structure is a specific case of a graph structure, it is possible to accomplish a file system like approach with a tagging approach. 
 
-Images
+// Images
 
 Self explanatory. I would like to support users uploading images to exegesis for both their private and public notes. I would also like to figure out a system to apply tags to these images.
 
-Bio pages
+// Bio pages
 
 Instead of allowing users to write bios for the public pages, I would like to let them mark one page as their "bio page." That page would be published, and would be shown directly on their profile. Basically, instead of a simple plaintext bio, their bios could be an entire exegesis note. That way, they could include links to their favorite pages, their favorite tags, and explain them to anyone visiting their page.
 
 If exegesis had image support, I'd draw a mockup, but alas we're not there yet.
 
-Long Term goals
+// Long Term goals
 
 These are just the features I'd like to publish by the beta release. Tentatively, I think I can get this done by the end of January, but my course load this quarter might delay that. 
 
 I will write soon about my more long term goals for exegesis - both technical tasks I'd like to get done and my overall vision for the product.
 
-Edit: 1/6/2021
+// Edit: 1/6/2021
 
 I have decided to remove namespaces from the list of features to have implemented before beta. The thinking is that this feature will only really be useful to people that have used exegesis for a while, and will not make that much of an impact for new users. I still plan on implementing it, but it will be after the beta release. I have included the original description of the feature below.
 
-Namespaces
+// Namespaces
 
 One of my biggest pet peeves about exegesis right now is titling conflicts. All note titles must be unique, because when you leave a tag with a note's title, it will link you to that note. If you have multiple notes with the same title, then the app would not know where to direct you.
 

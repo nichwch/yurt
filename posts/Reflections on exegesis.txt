@@ -6,14 +6,3 @@ That last project had a significant effect on me. Back in high school, I was hea
 
 This project, too, has had a large effect on me - you can't work on something for a year and not have it affect you. I started this project sitting in a coffee shop; now I haven't sat in one for months. I know this sounds like navel gazing, but I've worked on this project through a pandemic, civil unrest, and statewide wildfires. Now it's finished, and I almost feel a little bittersweet releasing it. 
 
-Here are a couple of my reflections on this year-long journey - about code, creativity, and life. I started writing these with the goal of making them "reflections." I'm not sure how well I stuck to the theme, but isn't that the point of exegesis - to enable disorganized thought? You can read these in any order. 
-
-[[Why I made exegesis]] 
-
-[[Manifesto]] 
-
-[[Giant Robots]]
-
-[[Second Brains]] 
-
-[[Prometheus]] 

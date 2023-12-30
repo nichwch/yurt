@@ -18,29 +18,6 @@ I want this new site to be a space for that.
 
 I want a space to be incoherent. I want a space to just throw paint on the walls.
 
-I want a space to be able to make up UI components on the spot, and then never use them again, or maybe use them again if I feel like it. Like tossing out a riff on the guitar.
-
-~
-In fact, in the middle of an essay, I should be able to invent a UI component just to illustrate a point.
-
-Early internet vibes.
-~
-
-Why should that be a process that only happens in Figma or notebooks? Why not go directly to code? The answer is that code requires set up. It requires a repository, and a framework, and a database, and infrastructure.
-
-If you share some infrastructure that lets you play around with ideas quickly and also share them quickly, that solves the problem. Stuff like Repl.it does this, but I feel less of a sense of ownership over it.
-
-This site will be that infrastructure for me. It will be a place for me to play with ideas quickly.
-
-I want my computer to feel like my guitar. I want it to feel like I can noodle here.
-
-Next.js's file-based routing makes it easy to create a fresh page on my site. styled-components helps isolate css styles so that I don't have to worry about conflicting css rules.
-
-A minimap makes all of this accessible from anywhere. You can access it by clicking the green button at the bottom, or by pressing command K.
-
-The idea is to just make a ton of side projects and put them all here. I have some preliminary ideas on how I can organize this but I'm not particularly set on anything right now. I don't feel particularly limited by framework choice either - with the liberal use of iFrames, I can simply embed other projects using different frameworks here. I've already done that with a project I've created with Svelte.
-
-
 Many of my ideas are in service of a singular dream: having the ability to combine incoherent fragments of creative inspiration into a cohesive organized whole. exegesis is about enabling that with writing. I hope the design of this site will help me do that with interface ideas.
 
 ~
