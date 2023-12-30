@@ -1,25 +1,32 @@
 import { create, insert, count } from '@orama/orama';
 import { persistToFile } from '@orama/plugin-data-persistence/server';
 import fs from 'fs';
-import { getAllEligibleFiles, getAllNewlyEditedFiles } from './getAllEligibleFiles.mjs';
+import { getAllNewlyEditedFiles } from './getAllEligibleFiles.mjs';
 import { getHFEmbedding } from './getHFEmbedding.mjs';
 import { GROUP_DELIM, splitText } from './splitText.mjs';
+import { restoreFromFile } from '@orama/plugin-data-persistence';
 
 export const dbPath = `.dbfile.msp`;
 export const POST_DIR = './posts';
 let segmentCount = 0;
 
-const db = await create({
-	schema: {
-		parent: 'string',
-		tags: 'string[]',
-		embedding: 'vector[384]',
-		content: 'string',
-		// unix timestamp
-		editDate: 'number'
-	},
-	id: 'oramadb'
-});
+let db;
+try {
+	// build on top of previous db
+	db = await restoreFromFile('binary', dbPath);
+} catch (e) {
+	db = await create({
+		schema: {
+			parent: 'string',
+			tags: 'string[]',
+			embedding: 'vector[384]',
+			content: 'string',
+			// unix timestamp
+			editDate: 'number'
+		},
+		id: 'oramadb'
+	});
+}
 
 const processSegment = async (segment, fileName) => {
 	segment = segment.trim();
