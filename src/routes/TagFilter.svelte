@@ -41,11 +41,15 @@
 		>{#if $showingTagFilters}
 			hide tags
 		{:else}
-			show tags
+			{#if $focusedTag}
+				tagged: {$focusedTag}
+			{:else}
+				show tags
+			{/if}
 		{/if}</button
 	>
 	{#if $focusedTag !== null}
-		<span class="text-red-800">{$focusedTag}</span>
+		<span class="text-red-800"></span>
 	{/if}
 </div>
 
