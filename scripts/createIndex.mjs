@@ -58,7 +58,7 @@ async function processFile(filePath) {
 
 	const pathNameWithoutDot = convertPathNameToIndexName(filePath);
 	console.log('pathname', filePath, pathNameWithoutDot);
-	fs.writeFile(`./${pathNameWithoutDot}.json`, json, 'utf8');
+	fs.writeFile(`./post-index/${pathNameWithoutDot}.json`, json, 'utf8');
 }
 
 const allFiles = getAllEligibleFiles(POST_DIR);
