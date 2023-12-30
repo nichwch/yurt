@@ -43,10 +43,21 @@
 	afterNavigate(scrollToAndSelectBlock);
 
 	$: postName = $page.params.pathName.split('/').pop()?.split('.')?.[0];
+	$: postTags = data.tagIndex[$page.params.pathName];
+	$: console.log({ data });
 </script>
 
 <div class="md:w-[26rem] lg:w-[36rem] mx-auto md:p-0 px-5">
-	<h1 class="mb-5 text-lg font-semibold">{postName}</h1>
+	<div class="mb-5">
+		<h1 class="text-lg font-semibold">{postName}</h1>
+		<div>
+			<i class="mr-3">{new Date(data.postCreationDate).toDateString()} </i>
+			{#each postTags as tag}
+				<span class="mx-1 mb-1 px-1 border border-black bg-red-200">{tag}</span>
+			{/each}
+		</div>
+	</div>
+
 	{#each segments as segment, index}
 		{#if segment.trim().length > 0}
 			<button
