@@ -58,7 +58,7 @@
 	</div>
 	<!-- mobile menu -->
 	{#if $modalStore}
-		<MobileModalNav {posts} />
+		<MobileModalNav {posts} tags={allTags} />
 	{/if}
 	<div class="flex-grow overflow-y-auto py-10">
 		<slot />

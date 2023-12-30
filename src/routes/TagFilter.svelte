@@ -45,7 +45,7 @@
 		{/if}</button
 	>
 	{#if $focusedTag !== null}
-		<span class="text-red-800">posts tagged: {$focusedTag}</span>
+		<span class="text-red-800">{$focusedTag}</span>
 	{/if}
 </div>
 
