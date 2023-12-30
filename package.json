@@ -12,7 +12,8 @@
 		"format": "prettier --write .",
 		"create-index": "node ./scripts/createIndex.mjs",
 		"create-index-with-existing-db": "node ./scripts/createIndex.mjs --existingDB",
-		"create-date-file": "node ./scripts/createDateFile.mjs"
+		"create-date-file": "node ./scripts/createDateFile.mjs",
+		"create-tag-file": "node ./scripts/createTagFile.mjs"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

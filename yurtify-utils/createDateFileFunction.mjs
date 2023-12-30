@@ -2,7 +2,7 @@ import { POST_DIR } from './createDBFileFunction.mjs';
 import { getAllEligibleFiles } from './getAllEligibleFiles.mjs';
 import fs from 'fs/promises';
 
-const DATE_FILE_NAME = '.datefile.json';
+export const DATE_FILE_NAME = '.datefile.json';
 export const createDateFile = async () => {
 	const allFiles = getAllEligibleFiles(POST_DIR);
 	let dateFileContents = {};
