@@ -1,0 +1,29 @@
+Plaintext is your best friend.
+
+~
+I've been working on notetaking apps for years now. I starting working on the first one on the bus back from my internship. I had an idea for a simple interaction - users should be able to highlight a piece of text, then add tags to that text. I distinctly remember thinking to myself, "That should be a piece of cake! I should be able to finish it during the 45 minute bus  ride."
+
+
+It ended up taking the rest of the summer. I was 19, naive, and had no idea what a nightmare the contenteditable HTML standard was.
+~
+
+Here's the thing - I don't think anyone really needs right text that badly. Italics and bold don't matter that much. The one thing I find myself missing a lot is titles, but you can do something similar with plaintext simply by having a number before a line, like so:
+
+// 1. Section Title
+
+The other thing I miss is links. You can still paste urls, however. It's ugly but it works. 
+
+The bottom line is with a notetaking app, what I'm really looking for is the ability to see connections between my ideas. I don't care about pretty formatting. Plain text is uglier, but it increases the range of things you can do with your notes - you can pipe it into an LLM, you can pipe it into a summarizer, you can take notes on Apple Notes then paste them into your notes later, you can set up a service that lets you text a number that will then paste your texts into your notes, etc. etc. 
+
+The flexibility and power and power of plaintext matters much more than the meagre aesthetic gains of rich text. I am genuinely convinced that bold, italics and titles add little to nothing to my experience of a notetaking app.
+
+Of course, if you're looking to raise a billion dollars on your consumer-facing notetaking app, plain text won't cut it. Lucky for us all, Jerome Powell has acted wisely to proscribe this possibility.
+
+One last thing: There is a solution that combines the flexibility of plaintext with the aesthetics of rich text - Markdown! I don't think I'll support Markdown formatting in nomad hypertext, but for my static site generator Yurt, I will try to do that in the future. The utility would mostly be from having usable links. 
+
+
+
+ 
+
+
+

@@ -1,0 +1,21 @@
+Nomad Hypertext is a writing app built around semantic search. 
+
+It uses neural search to show you how your ideas are connected to each other. This is done offline and privately on your computer, entirely on your machine. 
+
+Next to every paragraph, there is a button that will show you other related paragraphs from your other notes. 
+
+It does this by dividing your notes up into paragraph-sized blocks and indexing them into a vector database with an AI embedding model.
+
+The app is free and open source. Notes are stored as plain text files, which means you are free to use tools like git to sync them across multiple devices, and free to port your notes over to other apps if you wish. 
+
+The basic idea here is that semantic search functions better than backlinking, tags, or folders at helping you see connections between your ideas. It is also much simpler to implement. With backlinks and tags, you often need specialized file types, but semantic search works on top of plain text. Semantic search is all you need!
+
+~
+I'll end with a haiku. 
+
+Nomad Hypertext
+Powered by semantic search 
+Gives inspiration
+~
+
+

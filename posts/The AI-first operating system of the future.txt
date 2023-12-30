@@ -1,0 +1,15 @@
+The AI first operating system of the future already exists - it's called unix. I think the unix philosophy lends itself exceptionally well to the use of AI.
+
+Most software today is written for mobile or web. Both of these embody the opposite of the unix philosophy of small, simple, composable programs. At the same time, an entire generation (myself included) has grown up interacting with computers primarily through web browsers and cell phones, interacting less and less with the native filesystem.
+
+The counter argument here is that people don't want to use files, and they don't want to manage their own systems. I don't think this is a forgone conclusion. Think about how much effort has been poured into making new technologies like touchscreens and AI legible to ordinary people. 
+
+The fact that most people interact with computers through web and mobile was not some foregone conclusion. It took serious effort and ingenuity from really smart people to make these platforms accessible to regular people. Once upon a time, filesystems and personal computers were the dominant paradigm of computing, and it was web and mobile that were strange, inaccessible pipe dreams. Increasingly, the opposite is the case.
+
+Local-first AI presents a huge opportunity to change this. Like the now-dominant paradigms of web and mobile computing, a local-first future is not a forgone conclusion - but it is possible. What if we tried really hard to make filesystems and composable, small, programs usable for ordinary people? What if we designed software in a way that allowed people to take control of their own data? What if we made a bet on increasing computer literacy, rather than surrendering ourselves to infantilizing users?  
+
+
+
+
+
+

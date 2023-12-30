@@ -60,9 +60,12 @@
 
 	{#each segments as segment, index}
 		{#if segment.trim().length > 0}
-			<button
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+			<div
+				role="article"
 				id="editor-block-{index}"
-				class="text-left block p-1 break-words hover:bg-red-100 transition-colors"
+				class="text-left block p-1 break-words md:hover:bg-red-100 transition-colors"
 				class:bg-red-100={$focusedText?.trim() === segment?.trim()}
 				on:click={() => {
 					focusedText.set(segment);
@@ -70,7 +73,7 @@
 				}}
 			>
 				{segment}
-			</button>
+			</div>
 		{:else}
 			<br />
 		{/if}
