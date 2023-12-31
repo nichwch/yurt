@@ -94,11 +94,25 @@
   "posts/untitled-9-30-2021.txt": [
     "journal"
   ],
-  "posts/Plaintext is your best friend.txt": [],
-  "posts/The AI-first operating system of the future.txt": [],
-  "posts/The making of Nomad Hypertext.txt": [],
-  "posts/What is Nomad Hypertext?.txt": [],
-  "posts/What is Yurt?.txt": [],
-  "posts/What is Nomad Hypertext.txt": [],
-  "posts/What is Yurt.txt": []
+  "posts/Plaintext is your best friend.txt": [
+    "tools-for-thought",
+    "nomad-hypertext"
+  ],
+  "posts/The AI-first operating system of the future.txt": [
+    "tools-for-thought",
+    "nomad-hypertext"
+  ],
+  "posts/The making of Nomad Hypertext.txt": [
+    "tools-for-thought",
+    "nomad-hypertext",
+    "code"
+  ],
+  "posts/What is Nomad Hypertext.txt": [
+    "tools-for-thought",
+    "nomad-hypertext"
+  ],
+  "posts/What is Yurt.txt": [
+    "tools-for-thought",
+    "nomad-hypertext"
+  ]
 }
