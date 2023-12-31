@@ -1,6 +1,9 @@
-<script lang='ts'>
-import {page} from '$app/stores'
+<script lang="ts">
+	import { page } from '$app/stores';
 </script>
+
 {#key $page.params.pathName}
-<slot />
+	{#key $page.url.search}
+		<slot />
+	{/key}
 {/key}
