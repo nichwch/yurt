@@ -50,9 +50,9 @@
 
 		{#each posts as post}
 			<a
-				class="block px-1 transition-colors"
+				class="block px-1 transition-colors mb-3 hover:bg-red-200"
 				class:bg-red-400={$page.params.pathName === post}
-				href={'/' + post}>{post.replace('posts/', '')}</a
+				href={'/' + post}>{post.replace('posts/', '').split('.')[0]}</a
 			>
 		{/each}
 	</div>

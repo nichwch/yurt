@@ -1,7 +1,7 @@
-import { create, insert, count } from '@orama/orama';
+import { create, insert, count, search } from '@orama/orama';
 import { persistToFile } from '@orama/plugin-data-persistence/server';
 import fs from 'fs';
-import { getAllNewlyEditedFiles } from './getAllEligibleFiles.mjs';
+import { getAllNewlyEditedFiles } from './getFiles.mjs';
 import { getHFEmbedding } from './getHFEmbedding.mjs';
 import { GROUP_DELIM, splitText } from './splitText.mjs';
 import { restoreFromFile } from '@orama/plugin-data-persistence';
@@ -75,10 +75,30 @@ const accessAndIndexFile = async (filePath) => {
 	await indexFile(filePath, file);
 };
 
+/** @param {string}  property*/
+/** @param {string}  term*/
+const searchDBExact = async (property, term) => {
+	const results = await search(db, {
+		term,
+		properties: [property],
+		exact: true,
+		limit: 9999
+	});
+	// log.log("blurry results");
+	// log.log(results.hits.map((res) => res.document[property]));
+	// orama sometimes doesn't return exact results!! even with exact
+	const trueResults = results.hits.filter((result) => {
+		return result.document[property] === term;
+	});
+	console.log('true results', trueResults);
+	return trueResults;
+};
+
 const indexDirectory = async (directory) => {
 	console.log('indexing directory...');
 	const { default: pLimit } = await import('p-limit');
 	const allFiles = getAllNewlyEditedFiles(directory);
+	// need to delete existing ones
 	console.log('INDEXING THE FOLLOWING FILES:');
 	console.log(allFiles);
 	const promises = [];

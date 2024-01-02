@@ -1,7 +1,7 @@
 Plaintext is your best friend.
 
 ~
-I've been working on notetaking apps for years now. I starting working on the first one on the bus back from my internship. I had an idea for a simple interaction - users should be able to highlight a piece of text, then add tags to that text. I distinctly remember thinking to myself, "That should be a piece of cake! I should be able to finish it during the 45 minute bus  ride."
+I've been working on notetaking apps for years now. I starting working on my first one on the bus back from my internship. I had an idea for a simple interaction - users should be able to highlight a piece of text, then add tags to that text. I distinctly remember thinking to myself, "That should be a piece of cake! I should be able to finish it during the 45 minute bus ride."
 
 
 It ended up taking the rest of the summer. I was 19, naive, and had no idea what a nightmare the contenteditable HTML standard was.

@@ -1,10 +1,7 @@
 import { Command } from 'commander';
 import { POST_DIR, createDBFile, dbPath } from '../yurtify-utils/createDBFileFunction.mjs';
 import { restoreFromFile } from '@orama/plugin-data-persistence/server';
-import {
-	getAllEligibleFiles,
-	getAllNewlyEditedFiles
-} from '../yurtify-utils/getAllEligibleFiles.mjs';
+import { getAllEligibleFiles, getAllNewlyEditedFiles } from '../yurtify-utils/getFiles.mjs';
 import fs from 'fs/promises';
 import { splitText } from '../yurtify-utils/splitText.mjs';
 import { queryDB } from '../yurtify-utils/queryDB.mjs';
@@ -62,6 +59,8 @@ async function processFile(filePath) {
 }
 
 const allFiles = getAllEligibleFiles(POST_DIR);
+
+// delete existing entries for all eligible
 const limit = pLimit(5);
 await createDateFile();
 await createTagFile();

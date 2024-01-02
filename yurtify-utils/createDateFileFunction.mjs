@@ -1,5 +1,5 @@
 import { POST_DIR } from './createDBFileFunction.mjs';
-import { getAllEligibleFiles } from './getAllEligibleFiles.mjs';
+import { getAllEligibleFiles } from './getFiles.mjs';
 import fs from 'fs/promises';
 
 export const DATE_FILE_NAME = '.datefile.json';
