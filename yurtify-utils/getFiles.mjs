@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export const LAST_INDEXED_DATE_FILE = '.lastindexeddate.txt';
+export const LAST_INDEXED_DATE_FILE = 'lastindexeddate.config.txt';
 
 export const getAllEligibleFiles = (dirPath, files = []) => {
 	const entries = fs.readdirSync(dirPath);
