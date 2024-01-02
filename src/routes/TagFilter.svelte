@@ -33,7 +33,7 @@
 
 <div>
 	<button
-		class="px-1 bg-red-400 hover:bg-red-500 transition-colors border border-black filterMenu"
+		class="px-1 bg-red-400 hover:bg-red-500 transition-colors border border-black shadow filterMenu"
 		on:click={() => {
 			console.log('working');
 			showingTagFilters.set(!$showingTagFilters);

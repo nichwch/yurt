@@ -39,7 +39,6 @@ export const getAllNewlyEditedFiles = (dirPath) => {
 
 	const filesEditedSinceLastIndex = allFiles.filter((file) => {
 		const lastModifiedTime = fs.statSync(file).mtime.getTime();
-		console.log(lastModifiedTime, lastIndexedTime);
 		if (lastModifiedTime < lastIndexedTime) return false;
 		return true;
 	});

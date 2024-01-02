@@ -4,7 +4,7 @@ To be frank, I made some regrettable engineering decisions while making Nomad Hy
 The two big shortcuts I took were using Javascript instead of Typescript and using Electron instead of Tauri. 
 ~
 
-// Mistake 1: Javascript instead of Typescript
+// MISTAKE 1: JAVASCRIPT INSTEAD OF TYPESCRIPT
 
 I opted to use Javascript instead of Typescript out of mix of curiosity and laziness. Like most people, I was introduced to Javascript before I was introduced to Typescript. Like most people, I suffered through many null errors and was relieved when I discovered that the Typescript compiler could save me from many of them. Like most people, though I am grateful for Typescript, I find it occasionally cumbersome. 
 
@@ -14,13 +14,13 @@ In any case I wanted to try something new because that's what Recurse is all abo
 
 The results were... mixed. I did get to move faster at the start, but started running into more and more type-related bugs as development went on. If I were to do this project again, I'd stick to Typescript. 
 
-// Mistake 2: Electron
+// MISTAKE 2: ELECTRON
 
 Electron really, really, really sucks. For starters, you have to use CommonJS. That itself would be bad enough, but there are a huge pile of other inconveniences that Electron dumps on you: Using window.prompt() doesn't work (because it blocks the main thread apparently) and it generates HUGE executables without making the slightest effort to tree-shake anything (it was literally bundling in sample text files I was using in the repo). Creating my own window.prompt() alternative was an interesting exercise, but I wish I wasn't forced into doing it.
 
 Why not Tauri? With Tauri you have to write your backend routes in Rust. Surprisingly, I could not find any in-memory vector databases in Rust. I also have never written Rust in my life, though I would have been happy to pick it up to avoid using Electron. More importantly, I don't think there was a library that would have let me run Hugging Face's text embedding model in Rust. For these reasons, I had to use JS for my backend, which meant I had to use Electron. 
 
-// Mistake 3: Not being unix-pilled enough
+// MISTAKE 3: NOT BEING UNIX-PILLED ENOUGH
 
 You might object: Just because the vector DB and text embedding model are tied to JS doesn't mean your whole application does! You'd be right. I could have rolled the vector DB and text embedding model into a separate executable, compiling a node wrapper around those libraries into their own executables, then calling those executables from my Tauri app with IPC.
 

@@ -1,10 +1,9 @@
-import { create, insert, count, search } from '@orama/orama';
-import { persistToFile } from '@orama/plugin-data-persistence/server';
+import { create, insert, count, search, remove } from '@orama/orama';
+import { persistToFile, restoreFromFile } from '@orama/plugin-data-persistence/server';
 import fs from 'fs';
 import { getAllNewlyEditedFiles } from './getFiles.mjs';
 import { getHFEmbedding } from './getHFEmbedding.mjs';
 import { GROUP_DELIM, splitText } from './splitText.mjs';
-import { restoreFromFile } from '@orama/plugin-data-persistence';
 
 export const dbPath = `.dbfile.msp`;
 export const POST_DIR = './posts';
@@ -14,7 +13,12 @@ let db;
 try {
 	// build on top of previous db
 	db = await restoreFromFile('binary', dbPath);
+	console.log('BUILDING ON TOP OF DB FILE');
+	const dbCount = await count(db);
+	console.log(`db has ${dbCount} entries`);
 } catch (e) {
+	console.error(e);
+	console.log('STARTING FRESH DB FILE');
 	db = await create({
 		schema: {
 			parent: 'string',
@@ -102,6 +106,19 @@ const indexDirectory = async (directory) => {
 	console.log('INDEXING THE FOLLOWING FILES:');
 	console.log(allFiles);
 	const promises = [];
+
+	// delete existing indices for edited files
+	const entriesInEditedFiles = [];
+	for (let file of allFiles) {
+		const entriesInFile = await searchDBExact('parent', file);
+		entriesInEditedFiles.push(...entriesInFile);
+	}
+	console.log('entries in edited files', entriesInEditedFiles);
+	let deletePromises = [];
+	for (let entry of entriesInEditedFiles) {
+		deletePromises.push(remove(db, entry.id));
+	}
+	await Promise.all(deletePromises);
 
 	// then insert the new entries from the modified files
 	// batch these 4 files at a time

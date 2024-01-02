@@ -43,7 +43,7 @@
 	afterNavigate(scrollToAndSelectBlock);
 
 	$: postName = $page.params.pathName.split('/').pop()?.split('.')?.[0];
-	$: postTags = data.tagIndex[$page.params.pathName];
+	$: postTags = data.tagIndex?.[$page.params.pathName] || [];
 	$: console.log({ data });
 </script>
 
