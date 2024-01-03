@@ -54,7 +54,7 @@
 
 <title>{postName}</title>
 <div class="md:w-[26rem] lg:w-[36rem] mx-auto md:p-0 px-5">
-	<div class="mb-5">
+	<div class="mb-5 px-1">
 		<h1 class="text-lg font-semibold">{postName}</h1>
 		<div class="mb-2">
 			<i class="mr-3">{publishDate.toDateString()} </i>
