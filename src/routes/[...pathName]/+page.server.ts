@@ -1,7 +1,7 @@
 import { convertPathNameToIndexName } from '$lib/convertPathNameToIndexName';
 import fs from 'fs/promises';
 import type { PageServerLoad } from '../[...pathName]/$types';
-import { DATE_FILE_NAME } from '../../lib';
+import { BIRTHDAY_FILE_NAME, DATE_FILE_NAME } from '../../lib';
 
 export const load = (async ({ params }) => {
 	const path = params.pathName;
@@ -14,5 +14,7 @@ export const load = (async ({ params }) => {
 	const dateIndex = JSON.parse(dateFile);
 	const postCreationDate = dateIndex[path];
 
-	return { pageContent, pageIndex, postCreationDate };
+	const birthday = await fs.readFile(BIRTHDAY_FILE_NAME, 'utf-8');
+
+	return { pageContent, pageIndex, postCreationDate, birthday };
 }) satisfies PageServerLoad;

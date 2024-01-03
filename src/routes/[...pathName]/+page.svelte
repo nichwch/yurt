@@ -5,9 +5,14 @@
 	import { page } from '$app/stores';
 	import { afterNavigate } from '$app/navigation';
 	import { tick } from 'svelte';
+	import { AGE_YOU_STOPPED_BEING_CRINGE, CRINGE_MESSAGE } from '../../lib';
 	export let data: PageData;
 	const segments = splitText(data.pageContent);
 	const pageIndex = data.pageIndex;
+	const birthday = new Date(data.birthday);
+	const publishDate = new Date(data.postCreationDate);
+	const ageAtPublishInMS = new Date(publishDate.getTime() - birthday.getTime());
+	const ageAtPublish = Math.abs(ageAtPublishInMS.getUTCFullYear() - 1970);
 
 	const scrollToAndSelectBlock = async () => {
 		const searchedText = $page.url.searchParams?.get('search');
@@ -44,19 +49,24 @@
 
 	$: postName = $page.params.pathName.split('/').pop()?.split('.')?.[0];
 	$: postTags = data.tagIndex?.[$page.params.pathName] || [];
-	$: console.log({ data });
+	$: console.log({ data, ageAtPublish, ageAtPublishInMS });
 </script>
 
 <title>{postName}</title>
 <div class="md:w-[26rem] lg:w-[36rem] mx-auto md:p-0 px-5">
 	<div class="mb-5">
 		<h1 class="text-lg font-semibold">{postName}</h1>
-		<div>
-			<i class="mr-3">{new Date(data.postCreationDate).toDateString()} </i>
+		<div class="mb-2">
+			<i class="mr-3">{publishDate.toDateString()} </i>
 			{#each postTags as tag}
 				<span class="mx-1 mb-1 px-1 border border-black bg-red-200">{tag}</span>
 			{/each}
 		</div>
+		{#if ageAtPublish < AGE_YOU_STOPPED_BEING_CRINGE}
+			<div class="p-2 border border-red-800 bg-red-200 text-sm text-red-800">
+				{CRINGE_MESSAGE}
+			</div>
+		{/if}
 	</div>
 
 	{#each segments as segment, index}
