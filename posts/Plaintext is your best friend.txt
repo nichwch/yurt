@@ -21,6 +21,8 @@ Of course, if you're looking to raise a billion dollars on your consumer-facing 
 
 One last thing: There is a solution that combines the flexibility of plaintext with the aesthetics of rich text - Markdown! I don't think I'll support Markdown formatting in nomad hypertext, but for my static site generator Yurt, I will try to do that in the future. The utility would mostly be from having usable links. 
 
+Edit: I have added very basic support for Markdown to Yurt - right now pretty much only links work.
+
 
 
  

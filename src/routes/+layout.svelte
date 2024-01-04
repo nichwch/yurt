@@ -66,9 +66,9 @@
 	{#if $focusedText !== null}
 		<!-- desktop search results -->
 		<div class="hidden md:flex flex-col p-2 pt-10 basis-1/5 w-1/5 h-full">
-			<h1 class="text-red-700">
+			<div class="text-red-700">
 				related <button class="float-right hover:underline" on:click={closeSidebar}>[X]</button>
-			</h1>
+			</div>
 			<div class="overflow-y-auto w-full">
 				{#each relatedContent || [] as entry}
 					<SearchEntry {entry} />

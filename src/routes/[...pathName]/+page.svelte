@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import SvelteMarkdown from 'svelte-markdown';
 	import { splitText } from '$lib/splitText';
 	import { focusedText, related } from '../searchStores';
 	import { page } from '$app/stores';
@@ -96,7 +97,7 @@
 						related.set(pageIndex[segment]);
 					}}
 				>
-					{segment}
+					<SvelteMarkdown source={segment} isInline />
 				</div>
 			{/if}
 		{:else}
@@ -104,3 +105,17 @@
 		{/if}
 	{/each}
 </div>
+
+<style>
+	div :global(h1) {
+		font-size: theme('fontSize.xl');
+	}
+
+	div :global(a) {
+		color: theme('colors.blue.500');
+		text-decoration: underline;
+	}
+	div :global(a:visited) {
+		color: theme('colors.purple.500');
+	}
+</style>

@@ -38,6 +38,14 @@ But isn't it strange that they have such imperial names? Tools for thought aren'
 That's why I picked the name nomad hypertext. 
 ~
 
+I was greatly inspired by two blogposts. The first, [Hyperlink Maximalism](https://thesephist.com/posts/hyperlink/) by Linus Lee talks about generating hyperlinks automatically between documents, and comes with a [demo](https://notation.app) that made a deep impression on me. To be honest, nomad hypertext is just Linus' demo using semantic search instead of full text search.
+
+~
+The second would be [All you need is links](https://subconscious.substack.com/p/all-you-need-is-links) by Gordon Brander. He puts forth the case that you can implement pretty much any feature you might want a tool for thought to have, using only hyperlinks. I found the idea that you could create a myriad of functionality with just one powerful feature extremely fascinating. 
+
+What he says about links, I believe to be true about semantic search. 
+~
+
 ~
 I'll end with a haiku. 
 
