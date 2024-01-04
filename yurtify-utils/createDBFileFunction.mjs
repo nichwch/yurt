@@ -81,7 +81,7 @@ const accessAndIndexFile = async (filePath) => {
 
 /** @param {string}  property*/
 /** @param {string}  term*/
-const searchDBExact = async (property, term) => {
+export const searchDBExact = async (property, term) => {
 	const results = await search(db, {
 		term,
 		properties: [property],
@@ -98,6 +98,20 @@ const searchDBExact = async (property, term) => {
 	return trueResults;
 };
 
+export const deleteIndicesForFiles = async (files) => {
+	const entriesInEditedFiles = [];
+	for (let file of files) {
+		const entriesInFile = await searchDBExact('parent', file);
+		entriesInEditedFiles.push(...entriesInFile);
+	}
+	console.log('entries in edited files', entriesInEditedFiles);
+	let deletePromises = [];
+	for (let entry of entriesInEditedFiles) {
+		deletePromises.push(remove(db, entry.id));
+	}
+	await Promise.all(deletePromises);
+};
+
 const indexDirectory = async (directory) => {
 	console.log('indexing directory...');
 	const { default: pLimit } = await import('p-limit');
@@ -108,17 +122,7 @@ const indexDirectory = async (directory) => {
 	const promises = [];
 
 	// delete existing indices for edited files
-	const entriesInEditedFiles = [];
-	for (let file of allFiles) {
-		const entriesInFile = await searchDBExact('parent', file);
-		entriesInEditedFiles.push(...entriesInFile);
-	}
-	console.log('entries in edited files', entriesInEditedFiles);
-	let deletePromises = [];
-	for (let entry of entriesInEditedFiles) {
-		deletePromises.push(remove(db, entry.id));
-	}
-	await Promise.all(deletePromises);
+	await deleteIndicesForFiles(allFiles);
 
 	// then insert the new entries from the modified files
 	// batch these 4 files at a time
