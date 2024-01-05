@@ -1,0 +1,17 @@
+// What I'm up to now, as of Sat Dec 30 2023
+
+At the Recurse center, grinding leetcode and working on nomad hypertext, a collection of interface ideas that center around local-first notetaking powered by semantic search and AI. 
+
+Playing a lot of guitar. Thinking about how fundamental rhythm is to the guitar, even when playing lead lines. Thinking about how you can approach solos like a series of improvised rhythmic riffs. Listening to a lot of King Crimson. 
+
+Thinking about Marshall McLuhan and the Medium is the Message. More specifically, thinking about his concept of sensory ratios, and how biased we are towards the visual sense. 
+
+Thinking about how the piano is an explicitly visual instrument (laid out for easy sight reading), while the guitar is a more tactile and auditory instrument (difficult to sight read, rewards learning by ear therefore auditory; strings literally cut into your fingers, therefore tactile). 
+
+Thinking about offline first software, and how offline, open source AI models combined with CRDTs might offer the opportunity to create offline-first software that is not only more private than cloud software, but also *better.*
+
+Thinking about filesystems and how they have been unfairly maligned. If we put more effort into designing novel interfaces for filesystems, it would allow more people to exercise agency over their own data. Cloud software and mobile computing have killed an important part of computing literacy. 
+
+
+
+

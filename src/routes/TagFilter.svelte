@@ -48,9 +48,10 @@
 			{/if}
 		{/if}</button
 	>
-	{#if $focusedTag !== null}
-		<span class="text-red-800"></span>
-	{/if}
+	<a
+		class="inline-block px-1 bg-blue-300 hover:bg-blue-400 transition-colors border border-black shadow"
+		href="/">home</a
+	>
 </div>
 
 {#if $showingTagFilters}

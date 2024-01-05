@@ -1,11 +1,6 @@
 import { Command } from 'commander';
-import {
-	POST_DIR,
-	createDBFile,
-	dbPath,
-	deleteIndicesForFiles
-} from '../yurtify-utils/createDBFileFunction.mjs';
-import { restoreFromFile } from '@orama/plugin-data-persistence/server';
+import { POST_DIR, createDBFile, dbPath } from '../yurtify-utils/createDBFileFunction.mjs';
+import { restoreFromFile, persistToFile } from '@orama/plugin-data-persistence/server';
 import { getAllEligibleFiles } from '../yurtify-utils/getFiles.mjs';
 import fs from 'fs/promises';
 import { splitText } from '../yurtify-utils/splitText.mjs';
@@ -14,9 +9,10 @@ import pLimit from 'p-limit';
 import { convertPathNameToIndexName } from '../yurtify-utils/convertPathNameToIndexName.mjs';
 import { createDateFile } from '../yurtify-utils/createDateFileFunction.mjs';
 import { createTagFile } from '../yurtify-utils/createTagFileFunction.mjs';
+import { deleteIndicesForFiles } from '../yurtify-utils/dbUtils.mjs';
+import { INDEXED_FILES } from '../yurtify-utils/configFiles.mjs';
 
 const program = new Command();
-export const INDEXED_FILES = 'indexedfiles.config.json';
 console.log('HERE?');
 
 program.option('--existingDB');
@@ -77,12 +73,14 @@ const allFilesSet = new Set(allFiles);
 const deletedFiles = previouslyIndexed.filter((file) => !allFilesSet.has(file));
 
 console.log('deleted', deletedFiles);
-await deleteIndicesForFiles(deletedFiles);
+await deleteIndicesForFiles(db, deletedFiles);
+
+await persistToFile(db, 'binary', dbPath);
 // delete existing entries for all eligible
 const limit = pLimit(5);
 await createDateFile();
 await createTagFile();
+await fs.rm('./post-index', { recursive: true, force: true });
+await fs.mkdir('./post-index');
 await Promise.all(allFiles.map((file) => limit(() => processFile(file))));
-await fs.writeFile(INDEXED_FILES, JSON.stringify(allFiles), 'utf-8');
-
-// console.log(resultObj);
+await fs.writeFile(INDEXED_FILES, JSON.stringify(allFiles, null, 2), 'utf-8');

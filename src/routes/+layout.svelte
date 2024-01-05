@@ -25,11 +25,11 @@
 			}, [] as string[])
 		)
 	);
-	console.log({ allTags });
 
-	$: console.log($related, $focusedText);
 	$: relatedContent = $related?.filter((el) => el.content?.trim() !== $focusedText?.trim());
 	$: posts = data.posts.filter((el) => {
+		// don't show the now page in the side bar
+		if (el === data.nowPage) return false;
 		if ($focusedTag === null) return true;
 		else return data.tagIndex[el].includes($focusedTag);
 	});

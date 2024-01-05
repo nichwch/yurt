@@ -1,8 +1,8 @@
+import { DATE_FILE_NAME } from './configFiles.mjs';
 import { POST_DIR } from './createDBFileFunction.mjs';
 import { getAllEligibleFiles } from './getFiles.mjs';
 import fs from 'fs/promises';
 
-export const DATE_FILE_NAME = 'datefile.config.json';
 export const createDateFile = async () => {
 	const allFiles = getAllEligibleFiles(POST_DIR);
 	let dateFileContents = {};

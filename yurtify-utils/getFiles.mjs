@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-
-export const LAST_INDEXED_DATE_FILE = 'lastindexeddate.config.txt';
+import { LAST_INDEXED_DATE_FILE } from './configFiles.mjs';
 
 export const getAllEligibleFiles = (dirPath, files = []) => {
 	const entries = fs.readdirSync(dirPath);

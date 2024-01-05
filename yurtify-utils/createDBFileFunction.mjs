@@ -1,9 +1,10 @@
-import { create, insert, count, search, remove } from '@orama/orama';
+import { create, insert, count } from '@orama/orama';
 import { persistToFile, restoreFromFile } from '@orama/plugin-data-persistence/server';
 import fs from 'fs';
 import { getAllNewlyEditedFiles } from './getFiles.mjs';
 import { getHFEmbedding } from './getHFEmbedding.mjs';
 import { GROUP_DELIM, splitText } from './splitText.mjs';
+import { deleteIndicesForFiles } from './dbUtils.mjs';
 
 export const dbPath = `.dbfile.msp`;
 export const POST_DIR = './posts';
@@ -79,39 +80,6 @@ const accessAndIndexFile = async (filePath) => {
 	await indexFile(filePath, file);
 };
 
-/** @param {string}  property*/
-/** @param {string}  term*/
-export const searchDBExact = async (property, term) => {
-	const results = await search(db, {
-		term,
-		properties: [property],
-		exact: true,
-		limit: 9999
-	});
-	// log.log("blurry results");
-	// log.log(results.hits.map((res) => res.document[property]));
-	// orama sometimes doesn't return exact results!! even with exact
-	const trueResults = results.hits.filter((result) => {
-		return result.document[property] === term;
-	});
-	console.log('true results', trueResults);
-	return trueResults;
-};
-
-export const deleteIndicesForFiles = async (files) => {
-	const entriesInEditedFiles = [];
-	for (let file of files) {
-		const entriesInFile = await searchDBExact('parent', file);
-		entriesInEditedFiles.push(...entriesInFile);
-	}
-	console.log('entries in edited files', entriesInEditedFiles);
-	let deletePromises = [];
-	for (let entry of entriesInEditedFiles) {
-		deletePromises.push(remove(db, entry.id));
-	}
-	await Promise.all(deletePromises);
-};
-
 const indexDirectory = async (directory) => {
 	console.log('indexing directory...');
 	const { default: pLimit } = await import('p-limit');
@@ -122,7 +90,7 @@ const indexDirectory = async (directory) => {
 	const promises = [];
 
 	// delete existing indices for edited files
-	await deleteIndicesForFiles(allFiles);
+	await deleteIndicesForFiles(db, allFiles);
 
 	// then insert the new entries from the modified files
 	// batch these 4 files at a time
