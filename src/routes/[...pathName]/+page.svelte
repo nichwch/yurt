@@ -80,7 +80,7 @@
 					id="editor-block-{index}"
 					class="text-left text-green-800 block p-1 break-words whitespace-pre-wrap"
 				>
-					{segment}
+					<SvelteMarkdown source={segment} isInline />
 				</div>
 			{:else if segment.trim() === '~'}
 				<div class="text-gray-300">~</div>
