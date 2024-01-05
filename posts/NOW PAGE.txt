@@ -1,4 +1,4 @@
-// What I'm up to now, as of Sat Dec 30 2023
+// What I'm up to now, as of Jan 05 2024
 
 At the Recurse center, grinding leetcode and working on nomad hypertext, a collection of interface ideas that center around local-first notetaking powered by semantic search and AI. 
 
