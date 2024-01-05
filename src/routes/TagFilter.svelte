@@ -50,7 +50,7 @@
 	>
 	<a
 		class="inline-block px-1 bg-blue-300 hover:bg-blue-400 transition-colors border border-black shadow"
-		href="/">home</a
+		href="/">now</a
 	>
 </div>
 
