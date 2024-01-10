@@ -1,3 +1,5 @@
+// Yurt is open source. You can find it on Github [here](https://github.com/nichwch/yurt).
+
 Yurt is a static site generator, built off the same principles as Nomad Hypertext. 
 
 At build time, it embeds all your posts into vectors and puts them into a vector database. Then, for each paragraph in a post, it queries the vector database for the 20 most similar paragraphs from all your notes. It stores these in a precomputed index. It then statically generates a blog for you (like Gatsby or any other static site generator), and uses this index so users can see related ideas when they click on a paragraph.

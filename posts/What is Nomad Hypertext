@@ -1,0 +1,57 @@
+// Nomad Hypertext is open source. You can find it on Github [here](https://github.com/nichwch/nomad-hypertext).
+
+Nomad Hypertext is a writing app built around semantic search.
+
+It uses neural search to show you how your ideas are connected to each other. This is done offline and privately on your computer, entirely on your machine.
+
+Next to every paragraph, there is a button that will show you other related paragraphs from your other notes.
+
+It does this by dividing your notes up into paragraph-sized blocks and indexing them into a vector database with an AI embedding model.
+
+// FREE AND OPEN SOURCE
+
+The app is free and open source. Notes are stored as plain text files, which means you are free to use tools like git to sync them across multiple devices, and free to port your notes over to other apps if you wish.
+
+// SEMANTIC SEARCH IS ALL YOU NEED
+
+The basic idea here is that semantic search functions better than backlinking, tags, or folders at helping you see connections between your ideas. It is also much simpler to implement. With backlinks and tags, you often need specialized file types, but semantic search works on top of plain text.
+
+// HOW TO USE NOMAD HYPERTEXT
+
+It's pretty simple for the most part, you just write. If you want to see ideas that are related to a paragraph, click the # next to the paragraph.
+
+If you want some text to not show up in the search index (if it's private, or not very important, or any other reason), prepend the paragraph with two slashes.
+
+// Like this! This line will not show up in the index.
+~
+Sometimes, you want multiple paragraphs to be grouped together as if they were one. This might be because you're using new lines for emphasis, rather than as a split between ideas.
+
+To group multiple paragraphs together, put a ~ before the starting paragraph and another ~ after the ending paragraph.
+
+This collection of three paragraphs is an example of how to do that.
+~
+
+// ABOUT THE NAME
+~
+There are lots of tools for thought out there with names inspired by great empires or their capitals: Roam (Rome) Research, Athens Research, Vienna Hypertext, etc. etc. I like all of these apps and have taken inspiration from them.
+
+But isn't it strange that they have such imperial names? Tools for thought aren't about hierarchy and order, they're about freeing your thoughts to mingle with each other. It's less about ordering your thoughts into a hierarchical empire, and more about letting them wander freely, so that they might bear fruit.
+
+That's why I picked the name nomad hypertext.
+~
+
+I was greatly inspired by two blogposts. The first, [Hyperlink Maximalism](https://thesephist.com/posts/hyperlink/) by Linus Lee talks about generating hyperlinks automatically between documents, and comes with a [demo](https://notation.app) that made a deep impression on me. To be honest, nomad hypertext is just Linus' demo using semantic search instead of full text search.
+
+~
+The second would be [All you need is links](https://subconscious.substack.com/p/all-you-need-is-links) by Gordon Brander. He puts forth the case that you can implement pretty much any feature you might want a tool for thought to have, using only hyperlinks. I found the idea that you could create a myriad of functionality with just one powerful feature extremely fascinating.
+
+What he says about links, I believe to be true about semantic search.
+~
+
+~
+I'll end with a haiku.
+
+Nomad Hypertext
+Powered by semantic search
+Gives inspiration
+~
