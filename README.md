@@ -1,3 +1,5 @@
+<a href='http://www.recurse.com' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11322972/9e553260-910b-11e5-8de9-a5bf00c352ef.png' height='59px'/></a>
+
 Yurt is a static site generator, built off the same principles as [Nomad Hypertext](https://github.com/nichwch/nomad-hypertext).  
 
 You can use Yurt to make your own semantically hyperlinked blog! For an example of what that might look like, check out my [blog](https://blog.nicholaschen.io/posts/NOW%20PAGE.txt), or an [example instance](https://themediumisthemessage.nicholaschen.io/posts/about.txt) I deployed using the first chapter of Marshall McLuhan's *Understanding Media*.
@@ -56,5 +58,3 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-<a href='http://www.recurse.com' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11322972/9e553260-910b-11e5-8de9-a5bf00c352ef.png' height='59px'/></a>
