@@ -21,7 +21,7 @@ When you change the contents in posts (adding new posts, updating posts, or dele
 
 ## Now Page
 
-You can set one of your posts as a "now page", which you can use to show off the things that are currently top of mind for you. Like all your other posts, clicking on a paragraph here will show related content from all your other posts. This is handy for a now page, because readers can use it as a starting point to find other related content in your blog. It's like a semantic table of contents for your blog. For an example, check out the [pnow page](https://blog.nicholaschen.io) on my blog.
+You can set one of your posts as a "now page", which you can use to show off the things that are currently top of mind for you. Like all your other posts, clicking on a paragraph here will show related content from all your other posts. This is handy for a now page, because readers can use it as a starting point to find other related content in your blog. It's like a semantic table of contents for your blog. For an example, check out the [now page](https://blog.nicholaschen.io) on my blog.
 
 You can set the now page for your blog by entering the relative path to the post you'd like to use in `config/nowpage.config.txt`. Note that the path is relative to the root, so you must include `/posts` before your post. For an example, see the [now page configuration for my personal blog](https://github.com/nichwch/personal-blog/blob/main/config/nowpage.config.txt).
 
