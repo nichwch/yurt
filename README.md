@@ -1,4 +1,4 @@
-Yurt is a static site generator, built off the same principles as Nomad Hypertext.  
+Yurt is a static site generator, built off the same principles as [Nomad Hypertext](https://github.com/nichwch/nomad-hypertext).  
 
 You can use Yurt to make your own semantically hyperlinked blog! For an example of what that might look like, check out my [blog](https://blog.nicholaschen.io/posts/NOW%20PAGE.txt), or an [example instance](https://themediumisthemessage.nicholaschen.io/posts/about.txt) I deployed using the first chapter of Marshall McLuhan's *Understanding Media*.
 
