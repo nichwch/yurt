@@ -1,3 +1,8 @@
+<h1 align='center'>YURT</h1>
+<p align='center'>
+<img src="https://github.com/nichwch/nomad-hypertext/assets/7423703/501d295c-b5c5-41bc-8fdc-307731439dcc" alt="drawing" width="500"/>
+</p>
+
 Yurt is a static site generator, built off the same principles as [Nomad Hypertext](https://github.com/nichwch/nomad-hypertext).  
 
 You can use Yurt to make your own semantically hyperlinked blog! For an example of what that might look like, check out my [blog](https://blog.nicholaschen.io), or an [example instance](https://themediumisthemessage.nicholaschen.io/posts/about.txt) I deployed using the first chapter of Marshall McLuhan's *Understanding Media*.
