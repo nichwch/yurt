@@ -17,7 +17,7 @@ You can use Yurt to make your own semantically hyperlinked blog! For an example 
 
 1. Clone the repo.
 2. Run `npm install`.
-3. Remove the example posts is `/posts` and replace them with your blog content.
+3. Remove the example posts is `/posts` and replace them with your blog content. Yurt supports Markdown.
 4. Run `npm run create-index`. This will use a local first AI model to embed your blog posts, stick them in a vector DB, then create an index of the most related paragraphs to any given paragraph. It can take a while, so don't close it while it's running. In the future I'd like to support using a cloud provider for embeddings to speed things up.
 5. Run `npm run dev` to see a preview of your blog.
 6. Deploy to Vercel or any other cloud provider that supports SvelteKit.
