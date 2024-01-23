@@ -24,6 +24,17 @@ You can use Yurt to make your own semantically hyperlinked blog! For an example 
 
 When you change the contents in posts (adding new posts, updating posts, or deleting posts), you will have to run `npm run create-index` again to update the index. It will only embed newly edited files, but it will have to recreate the entire index, which can take some time.
 
+You can comment paragraphs with // to exclude them from indexing, and use ~ to group together sentences into the same block. See the following image for more details.
+
+<img width="629" alt="tutorial" src="https://github.com/nichwch/yurt/assets/7423703/ac322786-8d67-44ea-be3f-c12fe035128a">
+
+## How it works
+
+When you run `npm run create-index`, yurt embeds all the paragraphs in your notes using [gte-small](https://huggingface.co/Supabase/gte-small) into [OramaSearch](https://oramasearch.com/), which is an in memory vector database. If you've run the indexing script before, it will *only* embed posts that have been added or edited since you last ran the script.
+
+Then, for each paragraph in each post, it finds the 20 most similar paragraphs across all your posts. It generates a static index of these for each post, which is used to show similar ideas when users click a paragraph on your blog.
+
+The index is split by post, so when a post is loaded, only the index for that post is loaded. This is to minimize load time.
 ## Now Page
 
 You can set one of your posts as a "now page", which you can use to show off the things that are currently top of mind for you. Like all your other posts, clicking on a paragraph here will show related content from all your other posts. This is handy for a now page, because readers can use it as a starting point to find other related content in your blog. It's like a semantic table of contents for your blog. For an example, check out the [now page](https://blog.nicholaschen.io) on my blog.
@@ -38,6 +49,11 @@ You can sort your blog posts using tags. When you run `npm run create-index`, a 
 
 `config/lastindexeddate.config.txt` stores the Unix timestamp of the last indexed post, which is used to avoid embedding posts that have already been embedded. `config/indexedfiles.config.json` stores the files that have been previously indexed, so the index creation script can detect when a post has been deleted. You shouldn't touch either of these files unless something's gone wrong.
 
+# Possible optimizations
+
+Right now, it iterates across all paragraphs each time you generate the index. This is because all past content could be related to new content that you generate, so old posts need their indices recreated as well. In theory, yurt could generate an index for newly edited posts, then only reindex posts that have paragraphs that are related to the newly edited posts. This would speed things up significantly, but there is the possibility that there are older posts that are closely related to newly edited posts but not vice versa. In this case, we'd be sacrificing correctness for speed. Here correctness doesn't matter that much, so this would probably be a good tradeoff to make, I just haven't gotten around to implementing it.
+
+It would also be nice to add a way to do this all in the cloud, to speed things up.
 
 ## Developing
 
